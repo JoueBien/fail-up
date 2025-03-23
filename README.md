@@ -1,4 +1,12 @@
+## Fail Up
+
 A Go like error system for TypeScript.
+
+## Install
+
+```
+npm i fail-up
+```
 
 ## Usage
 
@@ -16,12 +24,12 @@ function doThing(): Result<string, "testError"> {
 
 const res = doThing();
 
-// Handel error
+// Handle error
 if (res instanceof Failure) {
   return;
 }
 
-// Handel happy path.
+// Handle happy path.
 const data: string = res;
 ```
 
@@ -39,15 +47,15 @@ function doThing(): Result<string, "testError" | "testError2"> {
 
 const res = doThing();
 if (res instanceof Failure && res.type === "testError2") {
-  // Handel first error type
+  // Handle first error type
   return;
 }
 
 if (res instanceof Failure && res.type === "testError") {
-  // Handel second error type
+  // Handle second error type
   return undefined;
 }
 
-// Handel happy path.
+// Handle happy path.
 const data: string = res;
 ```

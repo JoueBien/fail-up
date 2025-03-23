@@ -1,5 +1,6 @@
 {
   "name": "fail-up",
+  "license": "MIT NON-AI",
   "version": "0.1.0",
   "type": "module",
   "exports": {
@@ -15,8 +16,7 @@
     "build:esm": "npx tsc --module es2022 --outDir dist/esm/ && echo {\"type\": \"module\"} > dist/cjs/package.json"
   },
   "author": "JoueBien",
-  "license": "MIT",
-  "description": "",
+  "description": "A Go like error system for TypeScript.",
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.5",

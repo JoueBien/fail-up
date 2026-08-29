@@ -1,16 +1,15 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "NodeNext",
     "esModuleInterop": true,
-    "declaration": true,
     "target": "es6",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "types": ["jest", "node"]
+    "types": ["vitest/globals", "node"],
+    "skipLibCheck": true
   },
   "lib": ["es2015"],
-  "include": ["src/**/*.ts", "tests/**/*.test.ts"],
-  "exclude": ["src/**/*.spec.ts"]
+  "include": ["src/**/*.ts", "tests/**/*.test.ts"]
 }

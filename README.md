@@ -59,3 +59,10 @@ if (res instanceof Failure && res.type === "testError") {
 // Handle happy path.
 const data: string = res;
 ```
+
+You can create a Failure from an Error using the static from function.
+
+```ts
+const error = new Error("The error message");
+const failure = Failure.from({ error, type: "custom-type" });
+```

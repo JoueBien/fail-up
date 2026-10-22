@@ -1,8 +1,11 @@
 {
   "name": "fail-up",
+  "type": "module",
   "license": "MIT NON-AI",
-  "version": "2.0.0",
-  "main": "src/index.ts",
+  "version": "2.0.1",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "scripts": {
     "test": "vitest --coverage --run",
     "test:watch": "vitest --coverage",
@@ -13,13 +16,15 @@
   "description": "A Go like error system for TypeScript.",
   "devDependencies": {
     "@types/node": "22.13.5",
-    "@vitest/coverage-v8": "4.0.17",
+    "@vitest/coverage-v8": "5.0.5",
     "eslint": "9.39.2",
     "prettier": "3.8.0",
     "typescript": "^7.0.2",
-    "vitest": "4.0.17"
+    "vitest": "5.0.5"
   },
   "peerDependencies": {
-    "typescript": ">=5 <8"
+    "typescript": ">=5 <8",
+    "vitest": ">=4.0.17 <6",
+    "@vitest/coverage-v8": ">=4.0.17 <6"
   }
 }

@@ -1,4 +1,5 @@
-import { Failure, Result } from "./index";
+import { describe, it, expect } from "vitest";
+import { Failure, type Result } from "./index.ts";
 
 type DataSet = { data: string };
 

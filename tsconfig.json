@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
     "module": "NodeNext",
-    "esModuleInterop": true,
-    "target": "es6",
-    "moduleResolution": "nodenext",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "types": ["vitest/globals", "node"],
-    "skipLibCheck": true
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    "noEmit": true,
+    "types": ["node"],
+    "skipLibCheck": true,
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true
   },
-  "lib": ["es2015"],
-  "include": ["src/**/*.ts", "tests/**/*.test.ts"]
+  "include": ["src/**/*.ts", "src/**/*.spec.ts"]
 }
